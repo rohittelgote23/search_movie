@@ -55,7 +55,7 @@ Contributions are welcome! If you find any issues or want to add new features, f
 
 ## Contact
 
-If you have any questions or suggestions, feel free to contact me at your@email.com.
+If you have any questions or suggestions, feel free to contact me .
 
 
 
