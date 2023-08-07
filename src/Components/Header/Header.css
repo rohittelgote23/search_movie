@@ -1,0 +1,54 @@
+.nav {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    font-size: 2rem;
+    border-bottom: 1px solid gold;
+}
+
+.but::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: gold;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease;
+}
+
+.but:hover::after {
+    transform: scaleX(1);
+}
+.active{
+    color: gold;
+}
+
+.logo-img {
+
+    height: 40px;
+    width: 98px;
+    border-radius: 7px;
+}
+
+@media (max-width: 768px) {
+    .logo-img{
+        height: 30px;
+        width: 70px;
+    }
+
+    .nav {
+        font-size: 1.5rem;
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .nav {
+        gap: 1rem;
+    }
+}

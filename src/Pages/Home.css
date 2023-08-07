@@ -1,0 +1,113 @@
+.main-slider-parent {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    opacity: 4;
+    cursor: default;
+}
+
+.slider-image-details {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 90%;
+    height: 97%;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    padding: 5rem 5rem 5rem 5rem;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+}
+
+.slider-image-details h1 {
+    color: red;
+    font-size: 4rem;
+}
+
+.slider-image-details h2 {
+    color: gold;
+    font-size: 3rem;
+}
+
+.slider-image-details p {
+    color: white;
+    font-size: 1rem;
+    font-style: italic;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.slider-image {
+    width: 100%;
+    height: 700px;
+    padding: 2% 5% 2% 5%;
+    opacity: .7;
+    
+}
+
+.slider-main-img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 15px #1c1d1f, -5px -5px 15px #222527;
+    box-shadow: 5px 5px 15px #1c1d1f, -5px -5px 15px #222527;
+}
+
+/* Custom styles for the carousel dots */
+.alice-carousel__dots {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 20px !important;
+  }
+  
+  .alice-carousel__dots-item {
+    background-color: #3d3f02a1 !important; /* Inactive dot color */
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    margin: 0 5px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+  }
+  
+  .alice-carousel__dots-item.__active {
+    background-color: gold !important;/* Color of the active dot */
+  }
+
+@media (max-width: 768px) {
+    .slider-image {
+        height: 240px;
+    }
+
+    .slider-image-details {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+    .slider-image-details h1 {
+        width: 50%;
+        font-size: 2rem;
+    }
+
+    .slider-image-details h2 {
+        font-size: 2rem;
+    }
+
+    .slider-image-details p {
+        width: 80%;
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .slider-image {
+            height: 500px;
+        }
+}
